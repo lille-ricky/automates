@@ -5,8 +5,8 @@ int nbNombres = 0;
 %}
 
 
-MOT [[:alpha:]]+
-NOMBRE [0-9]+([ \t][0-9]{3})*(,[0-9]+)?
+MOT [A-Za-z]+
+NOMBRE [0-9]{1,3}([ \t][0-9]{3})*(,[0-9]+)?
 %%
 
 {NOMBRE} {++nbNombres;}
